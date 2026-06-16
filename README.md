@@ -32,12 +32,13 @@ Mostly pain. But occasionally, the code actually compiles on the first try, whic
 </blockquote>
 </details>
 
-<div align="center">
-> *"I am not procrastinating. I am doing highly active revision."* - Me, probably.
-</div>
+---
+
+> _"I am not procrastinating. I am doing highly active revision."_ - Me, probably.
 
 ---
 
 <div align="center">
-  <sub>*"Built with tears, sweat, and an unhealthy amount of sarcasm."* </sub>
+  <sub>
+  Built with tears, sweat, and an unhealthy amount of sarcasm. </sub>
 </div>
