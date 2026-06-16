@@ -11,28 +11,20 @@ Welcome to my **Revision** repository. This is where I come to pretend I'm being
 
 ### 💡 What's Inside?
 
-**📚 Desperation disguised as practice**
-<blockquote>
-Revisiting those basic concepts I definitely should have mastered ages ago, so I don't look like an absolute beginner when someone asks me a simple question.
-</blockquote>
-
-**💅 Sarcastic commits**
-<blockquote>
-Because my code deserves exactly the same level of sass and passive-aggressiveness that I project on a daily basis. Expect commit messages like <i>"fixed the thing that was supposed to be fixed yesterday"</i>.
-</blockquote>
-
-**🔥 Pain, suffering, and occasional "Aha!" moments**
-<blockquote>
-Mostly pain. But occasionally, the code actually compiles on the first try, which is terrifying and leads to hours of intense paranoia wondering what I did wrong.
-</blockquote>
-
-
-
-> _"I am not procrastinating. I am doing highly active revision."_ - Me, probably.
+Inside, you'll find **🔥 desperation disguised as practice**, where I revisit basic concepts I should have mastered ages ago so I don't look like an absolute beginner. It's full of **🔥 sarcastic commits** because my code deserves exactly the same level of sass and passive-aggressiveness that I project on a daily basis (expect messages like <i>"fixed the thing that was supposed to be fixed yesterday"</i>). Most of all, you'll find **🔥 pain, suffering, and occasional "Aha!" moments**—mostly pain, but occasionally the code actually compiles on the first try, which is terrifying and leads to hours of intense paranoia wondering what I did wrong.
 
 
 
 <div align="center">
-  <sub>
-  Built with tears, sweat, and an unhealthy amount of sarcasm. </sub>
+  <blockquote>
+    _"I am not procrastinating. I am doing highly active revision."_ - Me, probably.🔥
+  </blockquote>
+</div>
+
+## 
+
+<div align="center">
+  <blockquote>
+    _Built with tears, sweat, and an unhealthy amount of sarcasm._
+  </blockquote>
 </div>
