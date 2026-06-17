@@ -1,6 +1,6 @@
 import { describe, it, expect } from "bun:test";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3000/v1";
 
 let instructorToken = "";
 let studentToken = "";
@@ -101,7 +101,7 @@ describe("Purchase APIs", () => {
 
   it("student can fetch own purchases", async () => {
     // get student id from /me
-    const meRes = await fetch(`${BASE_URL}/me`, {
+    const meRes = await fetch(`${BASE_URL}/users/me`, {
       headers: {
         Authorization: `Bearer ${studentToken}`,
       },
@@ -154,7 +154,7 @@ describe("Purchase APIs", () => {
     const data = await res.json();
     otherStudentToken = data.token;
 
-    const meRes = await fetch(`${BASE_URL}/me`, {
+    const meRes = await fetch(`${BASE_URL}/users/me`, {
       headers: {
         Authorization: `Bearer ${otherStudentToken}`,
       },

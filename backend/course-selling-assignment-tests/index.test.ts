@@ -1,6 +1,6 @@
-import { describe, it, expect } from "bun:test";
+  import { describe, it, expect } from "bun:test";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3000/v1";
 
 let token = "";
 
@@ -37,7 +37,7 @@ describe("Auth APIs", () => {
     });
 
     it("should return /me", async () => {
-        const res = await fetch(`${BASE_URL}/me`, {
+        const res = await fetch(`${BASE_URL}/users/me`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
