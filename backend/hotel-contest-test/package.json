@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/index.ts",
+    "db:push": "bunx drizzle-kit push",
     "test:verbose": "vitest run --reporter=verbose",
-    "test": "vitest run", "test:watch": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/bcrypt": "^6.0.0",
+    "@types/bun": "latest",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/pg": "^8.20.0",
@@ -20,12 +22,12 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "vitest": "^4.0.17",
     "bcrypt": "^6.0.0",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.21.0",
-    "zod": "^4.3.6"
+    "vitest": "^4.0.17",
+    "zod": "^4.4.3"
   }
 }
