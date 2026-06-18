@@ -28,6 +28,7 @@ export const signup = async (req: Request, res: Response): Promise<any> => {
   }
 };
 
+
 export const login = async (req: Request, res: Response): Promise<any> => {
   try {
     const { email, password } = req.body;
