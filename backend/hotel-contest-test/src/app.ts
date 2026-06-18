@@ -1,12 +1,13 @@
 import express from "express";
 import type { Request, Response, NextFunction } from "express";
-import { authRoutes } from "@/routes/exportAllRoutes";
-
-
+import { authRoutes, hotelRoutes, bookingRoutes, reviewRoutes } from "@/routes/exportAllRoutes";
 
 const app = express(); app.use(express.json());
 
-app.use("/v1/api/auth/", authRoutes)
+app.use("/api/auth", authRoutes);
+app.use("/api/bookings", bookingRoutes);
+app.use("/api/hotels", hotelRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 // THIS MUST BE THE LAST app.use() BEFORE export default app!
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {

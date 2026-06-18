@@ -1127,8 +1127,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
   });
   
   describe('POST /api/bookings', () => {
-    const futureDate1 = '2026-03-15';
-    const futureDate2 = '2026-03-18';
+    const futureDate1 = '2027-03-15';
+    const futureDate2 = '2027-03-18';
     
     test('should return UNAUTHORIZED without token', async () => {
       const { status, body } = await apiRequest('/api/bookings', {
@@ -1164,8 +1164,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
     });
     
     test('should create booking successfully as customer and validate all fields', async () => {
-      const checkIn = '2026-02-15';
-      const checkOut = '2026-02-18';
+      const checkIn = '2027-02-15';
+      const checkOut = '2027-02-18';
       
       const { status, body } = await apiRequest('/api/bookings', {
         method: 'POST',
@@ -1202,8 +1202,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId,
-          checkInDate: '2026-02-15',
-          checkOutDate: '2026-02-18',
+          checkInDate: '2027-02-15',
+          checkOutDate: '2027-02-18',
           guests: 2,
         }),
       });
@@ -1220,8 +1220,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId,
-          checkInDate: '2026-02-16',
-          checkOutDate: '2026-02-19',
+          checkInDate: '2027-02-16',
+          checkOutDate: '2027-02-19',
           guests: 2,
         }),
       });
@@ -1238,8 +1238,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId,
-          checkInDate: '2026-02-18',
-          checkOutDate: '2026-02-20',
+          checkInDate: '2027-02-18',
+          checkOutDate: '2027-02-20',
           guests: 2,
         }),
       });
@@ -1273,8 +1273,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId,
-          checkInDate: '2026-03-01',
-          checkOutDate: '2026-03-05',
+          checkInDate: '2027-03-01',
+          checkOutDate: '2027-03-05',
           guests: 10,
         }),
       });
@@ -1291,8 +1291,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: 'invalid_room_id',
-          checkInDate: '2026-03-01',
-          checkOutDate: '2026-03-05',
+          checkInDate: '2027-03-01',
+          checkOutDate: '2027-03-05',
           guests: 2,
         }),
       });
@@ -1308,8 +1308,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
           Authorization: `Bearer ${customerToken}`,
         },
         body: JSON.stringify({
-          checkInDate: '2026-03-01',
-          checkOutDate: '2026-03-05',
+          checkInDate: '2027-03-01',
+          checkOutDate: '2027-03-05',
           guests: 2,
         }),
       });
@@ -1326,7 +1326,7 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId,
-          checkOutDate: '2026-03-05',
+          checkOutDate: '2027-03-05',
           guests: 2,
         }),
       });
@@ -1343,8 +1343,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-03-10',
-          checkOutDate: '2026-03-08',
+          checkInDate: '2027-03-10',
+          checkOutDate: '2027-03-08',
           guests: 2,
         }),
       });
@@ -1361,8 +1361,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-04-01',
-          checkOutDate: '2026-04-06',
+          checkInDate: '2027-04-01',
+          checkOutDate: '2027-04-06',
           guests: 3,
         }),
       });
@@ -1379,8 +1379,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-05-01',
-          checkOutDate: '2026-05-02',
+          checkInDate: '2027-05-01',
+          checkOutDate: '2027-05-02',
           guests: 2,
         }),
       });
@@ -1513,8 +1513,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-12-15',
-          checkOutDate: '2026-12-18',
+          checkInDate: '2027-12-15',
+          checkOutDate: '2027-12-18',
           guests: 2,
         }),
       });
@@ -1624,8 +1624,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-07-15',
-          checkOutDate: '2026-07-18',
+          checkInDate: '2027-07-15',
+          checkOutDate: '2027-07-18',
           guests: 2,
         }),
       });
@@ -1644,8 +1644,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-07-15',
-          checkOutDate: '2026-07-18',
+          checkInDate: '2027-07-15',
+          checkOutDate: '2027-07-18',
           guests: 2,
         }),
       });
@@ -1674,8 +1674,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-08-15',
-          checkOutDate: '2026-08-18',
+          checkInDate: '2027-08-15',
+          checkOutDate: '2027-08-18',
           guests: 2,
         }),
       });
@@ -1698,8 +1698,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-09-15',
-          checkOutDate: '2026-09-18',
+          checkInDate: '2027-09-15',
+          checkOutDate: '2027-09-18',
           guests: 2,
         }),
       });
@@ -1757,8 +1757,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-10-15',
-          checkOutDate: '2026-10-18',
+          checkInDate: '2027-10-15',
+          checkOutDate: '2027-10-18',
           guests: 2,
         }),
       });
@@ -1787,8 +1787,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-11-15',
-          checkOutDate: '2026-11-18',
+          checkInDate: '2027-11-15',
+          checkOutDate: '2027-11-18',
           guests: 2,
         }),
       });
@@ -1824,8 +1824,8 @@ describe('Hotel Management System - Comprehensive Tests', () => {
         },
         body: JSON.stringify({
           roomId: room2Id,
-          checkInDate: '2026-12-01',
-          checkOutDate: '2026-12-05',
+          checkInDate: '2027-12-01',
+          checkOutDate: '2027-12-05',
           guests: 2,
         }),
       });
